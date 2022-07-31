@@ -1,6 +1,6 @@
-# UdacityDevopsCapstone
+# DevopsProject
 
-[![CircleCI](https://circleci.com/gh/SharadYadav28/UdacityDevopsCapstone.svg?style=shield)](https://app.circleci.com/pipelines/github/SharadYadav28/UdacityDevopsCapstone)
+[![CircleCI](https://circleci.com/gh/SharadYadav28/DevopsProject.svg?style=shield)](https://app.circleci.com/pipelines/github/SharadYadav28/DevopsProject)
 
 ## Project Overview
 
