@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sharadapp
+  labels:
+    app: sharadapp  
+  namespace: default    
+spec:
+  selector:
+    matchLabels:
+      app: sharadapp
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 35%
+      maxUnavailable: 35%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: sharadapp
+    spec:
+      containers:
+        - image: sharadyadav28/project5
+          imagePullPolicy: Always        
+          name: sharadapp          
+          ports:
+            - containerPort: 8080
