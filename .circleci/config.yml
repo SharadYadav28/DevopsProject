@@ -244,14 +244,14 @@ workflows:
           requires:
             - install      
       - create-eks-cluster:
-          cluster-name: sharad-eks-cluster      
+          cluster-name: sharaddevops      
           requires:
             - push-image
       - deploy-app:
-          cluster-name: sharad-eks-cluster
+          cluster-name: sharaddevops
           requires:
             - create-eks-cluster          
       - delete-cluster:
-          cluster-name: sharad-eks-cluster
+          cluster-name: sharaddevops
           requires:
             - deploy-app    
