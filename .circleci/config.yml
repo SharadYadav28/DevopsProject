@@ -70,7 +70,7 @@ jobs:
             # Tag image before pushing
             docker tag sharadyadav28/project5:${CIRCLE_WORKFLOW_ID:0:5} sharadyadav28/project5:latest
             # Push to docker hub            
-            docker push mrsunilmehta/project5:latest            
+            docker push sharadyadav28/project5:latest            
       # Here's where you will add some code to rollback on failure
       - delete-image      
 
@@ -245,7 +245,7 @@ workflows:
       - create-eks-cluster:
           cluster-name: sharad-eks-cluster      
           requires:
-            - install
+            - push-image
       - deploy-app:
           cluster-name: sharad-eks-cluster
           requires:
