@@ -251,7 +251,4 @@ workflows:
           cluster-name: sharaddevops
           requires:
             - create-eks-cluster          
-      - delete-cluster:
-          cluster-name: sharaddevops
-          requires:
-            - deploy-app    
+      
