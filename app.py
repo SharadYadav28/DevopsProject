@@ -10,7 +10,7 @@ LOG.setLevel(logging.INFO)
 
 @app.route("/")                                               # at the end point /
 def hello():  
-    LOG.info("Inside hello function  " )  $$$               # call method hello
+    LOG.info("Inside hello function  " )                   # call method hello
     return "Hello, welcome to sharad's final project"         # ello, welcome to sharad's final project"
 if __name__ == "__main__":                                 # on running python app.py
     app.run()   
